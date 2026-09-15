@@ -1,0 +1,53 @@
+title: framelad guide
+description: >-
+  Setup, a reference for every menu option, and the optional files you can
+  add under Menu, Data.
+
+url: "https://twius.github.io"
+baseurl: "/framelad-guide"
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+# --- theme options --------------------------------------------------------
+color_scheme: dark
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  tokenizer_separator: /[\s/]+/
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+callouts_level: quiet
+callouts:
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  warning:
+    title: Watch out
+    color: yellow
+  important:
+    title: Important
+    color: red
+
+footer_content: >-
+  framelad ships no game data of any kind. Every file described here is one you
+  supply yourself.
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# --- build ----------------------------------------------------------------
+exclude:
+  - README.md
+  - .gitignore
